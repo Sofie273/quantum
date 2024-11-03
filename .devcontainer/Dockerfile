@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /workspace
 
 # Install Qiskit and other dependencies
-RUN pip install qiskit matplotlib numpy pylatexenc jupyter
+RUN pip install qiskit qiskit-aer matplotlib numpy pylatexenc jupyter
 
 # Set up Jupyter kernel for VS Code
 RUN python -m ipykernel install --user --name=qiskit-dev --display-name "Python (Qiskit Dev)"
